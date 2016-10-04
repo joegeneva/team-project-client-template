@@ -5,9 +5,9 @@ side of your product runs in the browser.
 
 
 Pages to mockup in HTML:  
-  About / FAQ  
+  About / FAQ (Mike Keegan)  
   Course History  
-  Save Page  
-  Detailed Course Information  
-  Account Settings  
-  Main-App  (Anthony Depace will do mockup for this page)
+  Save Page (Geon Yoon)  
+  Detailed Course Information (Vactors)  
+  Account Settings (OneManDP)  
+  Main-App (Anthony Depace will do mockup for this page)  
