@@ -5,9 +5,9 @@ side of your product runs in the browser.
 
 
 Pages to mockup in HTML:
-  About / FAQ
-  Course History
-  Save Page
-  Detailed Course Information
-  Account Settings
-  Main-App
+  About / FAQ  
+  Course History  
+  Save Page  
+  Detailed Course Information  
+  Account Settings  
+  Main-App  
