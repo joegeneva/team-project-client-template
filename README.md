@@ -10,4 +10,4 @@ Pages to mockup in HTML:
   Save Page  
   Detailed Course Information  
   Account Settings  
-  Main-App  
+  Main-App  (Anthony Depace will do mockup for this page)
