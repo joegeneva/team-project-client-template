@@ -4,7 +4,7 @@ This repository will hold the *client side* of your product. The client
 side of your product runs in the browser.
 
 
-Pages to mockup in HTML:
+Pages to mockup in HTML:  
   About / FAQ  
   Course History  
   Save Page  
