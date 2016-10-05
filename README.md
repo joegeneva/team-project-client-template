@@ -6,7 +6,7 @@ side of your product runs in the browser.
 
 Pages to mockup in HTML:  
   About / FAQ (Mike Keegan)  
-  Course History  (Joseph Geneva)
+  Course History  (Joseph Geneva)  
   Save Page (Geon Yoon)  
   Detailed Course Information (Vactors)  
   Account Settings (OneManDP)  
