@@ -9,10 +9,10 @@ body {
   padding: 10px;
   height:inherit;
   width:inherit;
-
 }
 .about-settings > ul.li.select{
   text-align: right;
+  color: black;
 }
 
 
@@ -20,12 +20,8 @@ body {
   background-color: #FFFFFF;
 }
 
-.about-settings a:link, a:visited, a:hover, a:active{
-  color: #000000 !important;
-}
-
-.about-canvas a:link, a:visited, a:hover, a:active{
-  color: #0000EE;
+.blue-link{
+  color: blue;
 }
 
 .about-subtext{
@@ -38,4 +34,8 @@ body {
 .general-margin{
   margin: 20px;
   margin-top: 5px;
+}
+
+.contact-form{
+  margin-bottom: 5px;
 }
