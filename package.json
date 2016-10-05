@@ -5,8 +5,8 @@
   "author": "John Vilk <jvilk@cs.umass.edu>",
   "license": "MIT",
   "scripts": {
-    "build": "./node_modules/.bin/webpack",
-    "serve": "./node_modules/.bin/webpack-dev-server --content-base build"
+    "build": "webpack",
+    "serve": "webpack-dev-server --content-base build"
   },
   "devDependencies": {
     "babel": "^6.3.26",
@@ -20,5 +20,14 @@
     "react-dom": "^0.14.6",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1"
-  }
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeonYoon/team-project-client-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GeonYoon/team-project-client-template/issues"
+  },
+  "homepage": "https://github.com/GeonYoon/team-project-client-template#readme"
 }

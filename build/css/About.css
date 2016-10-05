@@ -1,0 +1,41 @@
+body {
+  padding-top: 60px;
+}
+
+.about-settings{
+  background-color: #85B2B7;
+  padding-top: 10px;
+  position: fixed;
+  padding: 10px;
+  height:inherit;
+  width:inherit;
+}
+.about-settings > ul.li.select{
+  text-align: right;
+  color: black;
+}
+
+
+.about-canvas{
+  background-color: #FFFFFF;
+}
+
+.blue-link{
+  color: blue;
+}
+
+.about-subtext{
+  padding-left: 20px;
+}
+.about-subtitle{
+  padding-left: 10px;
+}
+
+.general-margin{
+  margin: 20px;
+  margin-top: 5px;
+}
+
+.contact-form{
+  margin-bottom: 5px;
+}
