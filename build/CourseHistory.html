@@ -69,8 +69,8 @@
 <!--Settings tab-->
 
 <div class="container">
-  <div class="row">
     <div class="col-md-12 main-app-settings">
+
       <div class="table-responsive">
         <table class="table table-bordered">
           <thead class="thead">
@@ -78,6 +78,18 @@
               <h2 id="tabletitle">Course History</h2>
             </tr>
           </thead>
+          <tr>
+            <div class="dropdown pull-right">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select year: All
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">All</a></li>
+                <li class="divider"></li>
+                <li><a href="#">2016</a></li>
+                <li><a href="#">2015</a></li>
+              </ul>
+            </div>
+          </tr>
           <tr>
             <th>
               Course
@@ -106,7 +118,7 @@
               Status
             </th>
           </tr>
-          <tr>
+          <tr id="placeholder">
             <td>
               Placeholder
             </td>
@@ -147,5 +159,6 @@
 <!-- Include all compiled plugins (below),
 or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/coursehistory.js"></script>
 </body>
 </html>
