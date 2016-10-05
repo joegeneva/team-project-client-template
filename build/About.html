@@ -66,7 +66,8 @@
   <!-- The row that contains the three main columns of the website. -->
   <div class="row">
     <!-- Settings/ left sidebar-->
-    <div class="col-md-3 about-settings">
+    <div id="left-side" class="col-md-3">
+      <div class="about-settings">
       <p><a href="#">About</a></p>
       <br>
       <p><a href="#">FAQ</a></p>
@@ -74,74 +75,17 @@
       <p><a href="#">Helpful Links</a></p>
       <br>
       <p><a href="#">Contact Us</a></p>
-<!--
-      <button type="button" class="btn navbar-btn btn-default pull-right">
-        <span class="glyphicon glyphicon-arrow-left"> Settings Panel</span>
-      </button>
-      <br><br>
-      <hr>
-
-      <div class="form-group form-inline">
-        <label>Add a Major:</label>
-        <br>
-        <select class="form-control" title="Choose one of the following...">
-          <option>select a major..</option>
-          <option>Computer Science</option>
-          <option>Philosophy</option>
-          <option>Math</option>
-        </select>
-          <button class="btn btn-default pull-right" type="button" ><span class="glyphicon glyphicon-plus"></span></button>
-      </div>
-      <div class="form-group form-inline">
-        <label>Add a Minor:</label>
-        <br>
-        <select class="form-control">
-          <option>select a minor..</option>
-          <option>Computer Science</option>
-          <option>Philosophy</option>
-          <option>Math</option>
-        </select>
-          <button class="btn btn-default pull-right" type="button" ><span class="glyphicon glyphicon-plus"></span></button>
-      </div>
-
-      <div class="checkbox">
-        <label><input type="checkbox">Show Gen-ED Dependencies</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" value="">Hide In-Elligible Classes</label>
-      </div>
-    <hr>
-
-    <!-Show the currently selected settings (majors/minors)->
-    <div class="settings-current">
-      Currently Showing: <br>
-      Computer Science Major
     </div>
-    <hr>
-
-    <div class="btn-group" role="group">
-
-      <button type="button" class="btn navbar-btn btn-default">
-        <span class="glyphicon glyphicon-floppy-disk"> Save Progress</span>
-      </button>
-      <br>
-      <button type="button" class="btn navbar-btn btn-default">
-        <span class="glyphicon glyphicon-save"> Download PDF</span>
-      </button>
-    </div>
--->
     </div>
 
 
 
     <!-- Where the actual about / faq will go -->
-    <div class="col-md-9 main-app-canvas">
+    <div id="main-v" class="col-md-9 about-canvas">
       <!--Notes to self about what to include:
-            -have left sidebar move with scrolling
             -add textbox and button to contact us section
               -maybe even other textbox for email?
             -stylize the links in the section
-            -make an indent after each header
 
             -->
             <h2>About</h2>
@@ -158,7 +102,13 @@
               <h5 class="about-subtext"><a href="https://www.spire.umass.edu/">Spire</a><h5>
               <h5 class="about-subtext"><a href="http://www.umass.edu/">UMass</a><h5>
             <h2>Contact Us</h2>
-            <p class="about-subtext">here is where the text box and button to email us will go</p>
+            <form>
+              <p class="about-subtext">E-mail address:</p>
+              <input type="text" class="general-margin" name="email">
+              <p class="about-subtext">Your question:</p>
+              <textarea class="form-control general-margin" rows="3" placeholder="Type your question/comment/suggestion and click submit"></textarea>
+              <input type="submit" class="general-margin" name="content"><br>
+            </form>
     </div>
   </div>
 </div>
