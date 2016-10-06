@@ -3,7 +3,7 @@ body {
 }
 
 .main-app-settings{
-  background-color: #85B2B7;
+  background-color: #881c1c;
   padding-bottom: 5px;
   border-style: groove;
   border-color: black;
@@ -13,14 +13,11 @@ body {
   border-bottom-left-radius: 10px;
   border:1px solid black;
 
-
-
 }
 .main-app-settings > ul.li.select{
   text-align: right;
 
 }
-
 
 .main-app-canvas{
   background-color: white;
@@ -38,19 +35,6 @@ body {
 
 }
 
-.wpanel-body {
-  /*padding-bottom: 5px;*/
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border:1px solid black;
-  /*padding-right: 10px;*/
-
-}
-
-
-
 .mov-right {
   padding-left: 50px;
 }
@@ -60,17 +44,15 @@ body {
   padding-down: 20px;
 }
 
+.mov-down {
+  /*padding-top: 20px;*/
+  margin-top: 20px;
+}
+
+
 .minimize {
   padding-left: -20px;
   padding-right: -20px;
-}
-
-.mov-downupsmall {
-
-}
-.sidebar1 {
-    position: fixed;
-
 }
 
 .coloring {
@@ -82,5 +64,13 @@ body {
 }
 
 .lineBlock {
-    border:1px solid #76b6c4;
+  border:1px solid #76b6c4;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.whityy {
+  color: white;
 }
