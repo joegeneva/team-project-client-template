@@ -1,8 +1,49 @@
 .suggested button{
-
   border: none;
-  
 }
+
+hr{
+  background-color: #881c1c;
+  height: 1px;
+}
+
+.navbar{
+  background-color: #881c1c !important;
+  height: 50px;
+}
+.navbar-btn{
+  border: none;
+  background-color: transparent;
+  color: white !important;
+}
+.navbar-btn:hover {
+  outline: 0 !important;
+  background-color: transparent !important;
+}
+.navbar-btn:active{
+  color: black !important;
+  outline: 0;
+}
+.navbar-btn:focus{
+  color: black !important;
+  background-color: transparent !important;
+  outline: 0;
+}
+.navbar-left{
+  height:48px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.navbar-right{
+  text-align: center;
+}
+.home-btn{
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top:5px;
+}
+
 
 
 body{
