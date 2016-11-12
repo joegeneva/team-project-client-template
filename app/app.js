@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/navbar';
-import {AboutPage} from './components/about'; //this statement crashes everything? so about component is big block of code for now
+// import AboutPage from './components/about'; //this statement crashes everything? so about component is big block of code for now
 import {Router, Route, browserHistory} from 'react-router';
 // import FormSubmit from './components/formsubmit';
+import AboutPage from './components/about';
 
 
 class Home extends React.Component {
@@ -17,7 +18,7 @@ class Home extends React.Component {
 class About extends React.Component {
   render() {
     return (
-      <p>yo</p>
+      <AboutPage />
     );
   }
 }
@@ -58,7 +59,7 @@ class App extends React.Component {
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <Route path="/home" component={About} />
+      <Route path="/home" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/savepage" component={SavePage} />
       <Route path="/coursehistory" component={CourseHistory} />
