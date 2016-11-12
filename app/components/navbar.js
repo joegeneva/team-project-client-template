@@ -16,7 +16,7 @@ export default class Navbar extends React.Component{
                     <span className="glyphicon glyphicon-home home-btn"></span>
                   </button>
                 </a>
-                  <Link to={"/main/"}>
+                  <Link to={"/home/"}>
                   <button type="button" className="btn navbar-btn btn-default">
                     <span className="glyphicon glyphicon-briefcase"></span> Main App
                   </button>
