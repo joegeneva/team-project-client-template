@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './components/navbar'
-import {IndexRoute, Link,Router, Route, browserHistory } from 'react-router'
-import SavePages from './components/savePage'
-import Sidebar from './components/sidebar'
+import Navbar from './components/navbar';
+import {IndexRoute, Link,Router, Route, browserHistory } from 'react-router';
+import SavePages from './components/savePage';
+import Sidebar from './components/sidebar';
 import AboutPage from './components/about';
 
 
@@ -37,7 +37,7 @@ class About extends React.Component {
 class SavePage extends React.Component {
   render() {
     return (
-      <SavePages />
+      <SavePages user={1}/>
     );
   }
 }
@@ -162,7 +162,6 @@ ReactDOM.render((
   <Router history={browserHistory}>
       <Route path="/" component={App}>
       <IndexRoute component={Home} />
-
       <Route path="/home" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/savepage" component={SavePage} />

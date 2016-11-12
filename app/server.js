@@ -60,3 +60,9 @@ export function getUserData(user, cb) {
   // invokes (calls) the "cb" function some time in the future.
   emulateServerReturn(userData, cb);
 }
+
+export function getPageData(user){
+  var userData = readDocument('users', user);
+  var pageData = readDocument('savePage',userData.savedGraphs);
+  return pageData;
+}
