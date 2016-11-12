@@ -21,7 +21,7 @@ export default class Navbar extends React.Component{
                     <span className="glyphicon glyphicon-briefcase"></span> Main App
                   </button>
                   </Link>
-                  <Link to={"/savepage/"}>
+                  <Link to={"/savepage"}>
                   <button type="button" className="btn navbar-btn btn-default">
                     <span className="glyphicon glyphicon-folder-open"></span> Save Pages
                   </button>

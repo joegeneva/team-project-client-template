@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/navbar'
 import {Router, Route, browserHistory } from 'react-router'
+import SavePages from './components/savePage'
 
 class Home extends React.Component {
   render() {
@@ -64,7 +65,7 @@ class About extends React.Component {
 class SavePage extends React.Component {
   render() {
     return (
-      <p>This is the save page page.</p>
+      <SavePages />
     );
   }
 }
