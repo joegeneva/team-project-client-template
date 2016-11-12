@@ -6,6 +6,21 @@ var startupName = 'Faucet';
 
 // Put your mock objects here, as in Workshop 4
 var initialData = {
+  "courses" : {
+
+    "CS 326" : {
+      "name" : "Web Programming",
+
+      "textbooks" : "None.",
+
+      "prereqs" : {
+        "desc" : "Must be a junior or senior.",
+        "classes": ["121","187"]
+      }
+    }
+
+
+  }
 
 };
 
