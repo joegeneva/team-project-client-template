@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Navbar from './components/navbar'
+import {IndexRoute, Link,Router, Route, browserHistory } from 'react-router'
+import SavePages from './components/savePage'
 import Sidebar from './components/sidebar'
-import Navbar from './components/navbar';
 import AboutPage from './components/about';
-import {Link,Router, Route, browserHistory } from 'react-router';
+import CourseHistoryPage from './components/courseHistory';
 
 
 class Home extends React.Component {
+
   render() {
     return (
       <div>
@@ -28,7 +31,7 @@ class Home extends React.Component {
 class About extends React.Component {
   render() {
     return (
-      <AboutPage />
+      <AboutPage user={1}/>
     );
   }
 }
@@ -36,7 +39,7 @@ class About extends React.Component {
 class SavePage extends React.Component {
   render() {
     return (
-      <p>This is the save page page.</p>
+      <SavePages />
     );
   }
 }
@@ -44,7 +47,7 @@ class SavePage extends React.Component {
 class CourseHistory extends React.Component {
   render() {
     return (
-      <p>This is the course history page.</p>
+      <CourseHistoryPage />
     );
   }
 }
@@ -159,7 +162,9 @@ class App extends React.Component {
 
 ReactDOM.render((
   <Router history={browserHistory}>
-    <Route path="/" component={App}>
+      <Route path="/" component={App}>
+      <IndexRoute component={Home} />
+
       <Route path="/home" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/savepage" component={SavePage} />
