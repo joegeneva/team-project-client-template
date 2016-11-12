@@ -11,11 +11,11 @@ export default class Navbar extends React.Component{
             <div className="nav navbar-nav navbar-left">
               <div className="btn-toolbar pull-left navbar-left" role="toolbar">
                 <div className="btn-group" role="group">
-                  <a href="./MainApp.html">
-                  <button type="button" className="btn navbar-btn btn-default  home-btn">
+                  <Link to={"/home/"}>
+                    <button type="button" className="btn navbar-btn btn-default  home-btn">
                     <span className="glyphicon glyphicon-home home-btn"></span>
                   </button>
-                </a>
+                </Link>
                   <Link to={"/home/"}>
                   <button type="button" className="btn navbar-btn btn-default">
                     <span className="glyphicon glyphicon-briefcase"></span> Main App
@@ -48,7 +48,9 @@ export default class Navbar extends React.Component{
                     <span className="caret"></span>
                   </button>
                   <ul className="dropdown-menu">
-                    <li><a href="#">Log out...</a></li>
+                  <li><Link to={"/settings/"}>Settings</Link></li>
+                  <li><Link to={"/About/"}>About</Link></li>
+                  <li><a href="#">Log out...</a></li>
                   </ul>
                 </div>
               </div>
