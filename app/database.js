@@ -56,7 +56,7 @@ var initialData = {
       "number": 132,
       "prereqs": []
     }
-
+}
 };
 
 var data = JSON.parse(localStorage.getItem(startupName));
