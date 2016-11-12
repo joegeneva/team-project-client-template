@@ -6,7 +6,7 @@ import FormSub from './formsubmit';
 
 export default class AboutPage extends React.Component{
   render(){
-    var userInfo = getUserData(1,(content=>content))
+    var userInfo = getUserData(1)
     return(
       <div className="container">
         <div className="row">
