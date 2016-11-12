@@ -1,5 +1,5 @@
 import React from 'react';
-// import {postFeedback} from '../server';
+import {postFeedback} from '../server';
 // import {writeDocument, addDocument} from '../database.js';
 
 
