@@ -1,10 +1,13 @@
 import React from 'react';
-import FormSub from './formsubmit';
-// import {postNewFeedback} from '../server.js'
-
+// import FormSub from './formsubmit';
+// import {getUserData} from '../server.js';
 
 export default class AboutPage extends React.Component{
   render(){
+    var userInfo
+    getUserData(this.props.user, (feedData) => {
+      (userInfo = feedData);
+    });
     return(
       <div className="container">
         <div className="row">
@@ -28,6 +31,11 @@ export default class AboutPage extends React.Component{
           </div>
           </div>
           <div className="col-md-9 about-canvas">
+            <h2>User Info</h2>
+            <h5 className="about-subtitle">Name</h5>
+            <p className="about-subtext">{userInfo.fullName}</p>
+            <h5 className="about-subtitle">Majors</h5>
+            <p className="about-subtext">Computer Science</p>
                   <h2>About</h2>
                   <p className="about-subtext">This is a web app designed by six CS326 students here at UMass in order to help you plan your future! You can easily visualize what classes you still need to take and how far away from a minor you might be. You can also achieve a nifty sense of accomplishment when you complete a class and slowly move closer to those glorious upper-level electives like Web Programming. Good luck!</p>
                   <br />
@@ -42,7 +50,7 @@ export default class AboutPage extends React.Component{
                     <h5 className="about-subtext"><a href="https://www.spire.umass.edu/">Spire</a></h5>
                     <h5 className="about-subtext"><a href="http://www.umass.edu/">UMass</a></h5>
                   <h2>Contact Us</h2>
-                  <FormSub />
+                    <p className="about-subtext">e-mail us or something</p>
           </div>
         </div>
       </div>

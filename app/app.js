@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/navbar'
-import {Link,Router, Route, browserHistory } from 'react-router'
+import {IndexRoute, Link,Router, Route, browserHistory } from 'react-router'
 import SavePages from './components/savePage'
 import Sidebar from './components/sidebar'
 import AboutPage from './components/about';
@@ -29,7 +29,7 @@ class Home extends React.Component {
 class About extends React.Component {
   render() {
     return (
-      <AboutPage />
+      <AboutPage user={1}/>
     );
   }
 }
@@ -160,7 +160,9 @@ class App extends React.Component {
 
 ReactDOM.render((
   <Router history={browserHistory}>
-    <Route path="/" component={App}>
+      <Route path="/" component={App}>
+      <IndexRoute component={Home} />
+
       <Route path="/home" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/savepage" component={SavePage} />
