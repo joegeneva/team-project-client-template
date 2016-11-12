@@ -17,8 +17,7 @@ var initialData = {
   },
   "feedback":{
     "1":{
-      "user":1,
-      "content":"test 1"
+        "content":"first feedback"
     }
   },
   "majors":{
@@ -109,6 +108,12 @@ export function readDocument(collection, id) {
   return JSONClone(data[collection][id]);
 }
 
+export function readDocumentCollection(collection) {
+  // Clone the data. We do this to model a database, where you receive a
+  // *copy* of an object and not the object itself.
+  return JSONClone(data[collection]);
+}
+
 /**
  * Emulates writing a "document" to a NoSQL database.
  */
@@ -132,6 +137,11 @@ export function addDocument(collectionName, newDoc) {
   newDoc._id = nextId;
   writeDocument(collectionName, newDoc);
   return newDoc;
+}
+
+export function getFeedbackNum(){
+  console.log(Object.keys(initialData.feedback).length)
+  return Object.keys(initialData.feedback).length
 }
 
 /**
