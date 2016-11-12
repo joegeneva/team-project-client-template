@@ -9,3 +9,14 @@ function emulateServerReturn(data, cb) {
     cb(data);
   }, 4);
 }
+
+export function postFeedback(user, contents){
+  var newFeedback = {
+    "contents": contents
+  };
+  newFeedback = addDocument('feedback', newFeedback);
+
+  writeDocument('feedback', newFeedback);
+
+  emulateServerReturn(newFeedback);
+}

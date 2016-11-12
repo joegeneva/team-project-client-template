@@ -6,6 +6,81 @@ var startupName = 'Faucet';
 
 // Put your mock objects here, as in Workshop 4
 var initialData = {
+  "users":{
+    "1":{
+      "_id":1,
+      "fullName": "Student One",
+      "savedGraphs":[1,2,3,4,5],
+      "majors":[1,3],
+      "minors":[2]
+    }
+  },
+  "feedback":{
+    "1":{
+      "content":"test 1"
+    }
+  },
+  "majors":{
+    "1":{
+      "title": "Computer Science",
+      "courses":[1,2]
+    },
+    "2":{
+      "title": "Math",
+      "courses":[]
+    },
+    "3":{
+      "title": "Philosophy",
+      "courses":[]
+    }
+  },
+  "courses":{
+    "1":{
+      "name": "Web Programming",
+      "department": "CS",
+      "number": 326,
+      "prereqs": [2]
+    },
+    "2":{
+      "name": "Programming Methodology",
+      "department": "CS",
+      "number": 220,
+      "prereqs": []
+    },
+    "3":{
+      "name": "Calculus II",
+      "department": "MATH",
+      "number": 132,
+      "prereqs": []
+    }
+},
+
+"savePage": {
+  "1": {
+    "name": "first draft",
+    "time": "03:11pm . 09/15/2016"
+  },
+  "2": {
+    "name": "second draft",
+    "time": "03:11pm . 09/15/2016"
+  },
+  "3": {
+    "name": "third draft",
+    "time": "03:11pm . 09/15/2016"
+  },
+  "4": {
+    "name": "fourth draft",
+    "time": "03:11pm . 09/15/2016"
+  },
+  "5": {
+    "name": "fifth draft",
+    "time": "03:11pm . 09/15/2016"
+  },
+  "6": {
+    "name": "sixth draft",
+    "time": "03:11pm . 09/15/2016"
+  }
+}
 
 };
 
