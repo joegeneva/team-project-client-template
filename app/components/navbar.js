@@ -11,12 +11,12 @@ export default class Navbar extends React.Component{
             <div className="nav navbar-nav navbar-left">
               <div className="btn-toolbar pull-left navbar-left" role="toolbar">
                 <div className="btn-group" role="group">
-                  <Link to={"/home/"}>
+                  <Link to={"/"}>
                     <button type="button" className="btn navbar-btn btn-default  home-btn">
-                    <span className="glyphicon glyphicon-home home-btn"></span>
-                  </button>
-                </Link>
-                  <Link to={"/home/"}>
+                      <span className="glyphicon glyphicon-home home-btn"></span>
+                    </button>
+                  </Link>
+                  <Link to={"/"}>
                   <button type="button" className="btn navbar-btn btn-default">
                     <span className="glyphicon glyphicon-briefcase"></span> Main App
                   </button>

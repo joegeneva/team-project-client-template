@@ -70,3 +70,9 @@ export function getFeedbackData(){
   console.log(feedbackdata.listoffeedback.length)
   return feedbackdata;
 }
+
+export function getPageData(user){
+  var userData = readDocument('users', user);
+  var pageData = readDocument('savePage',userData.savedGraphs);
+  return pageData;
+}

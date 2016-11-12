@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+//import React from 'react';
+//import ReactDOM from 'react-dom';
 
 // Modify with your startup's name!
 var startupName = 'Faucet';
@@ -10,7 +10,7 @@ var initialData = {
     "1":{
       "_id":1,
       "fullName": "Student One",
-      "savedGraphs":[1,2,3,4,5],
+      "savedGraphs": 1,
       "majors":[1,3],
       "minors":[2]
     }
@@ -57,28 +57,32 @@ var initialData = {
 
 "savePage": {
   "1": {
-    "name": "first draft",
-    "time": "03:11pm . 09/15/2016"
-  },
-  "2": {
-    "name": "second draft",
-    "time": "03:11pm . 09/15/2016"
-  },
-  "3": {
-    "name": "third draft",
-    "time": "03:11pm . 09/15/2016"
-  },
-  "4": {
-    "name": "fourth draft",
-    "time": "03:11pm . 09/15/2016"
-  },
-  "5": {
-    "name": "fifth draft",
-    "time": "03:11pm . 09/15/2016"
-  },
-  "6": {
-    "name": "sixth draft",
-    "time": "03:11pm . 09/15/2016"
+    "pages": [
+        {
+          "name": "first draft",
+          "time": "03:11pm . 09/15/2016"
+        },
+        {
+          "name": "second draft",
+          "time": "03:11pm . 09/15/2016"
+        },
+        {
+          "name": "third draft",
+          "time": "03:11pm . 09/15/2016"
+        },
+        {
+          "name": "fourth draft",
+          "time": "03:11pm . 09/15/2016"
+        },
+        {
+          "name": "fifth draft",
+          "time": "03:11pm . 09/15/2016"
+        },
+        {
+          "name": "sixth draft",
+          "time": "03:11pm . 09/15/2016"
+        }
+      ]
   }
 }
 
@@ -155,19 +159,20 @@ export function resetDatabase() {
 /**
  * Reset database button.
  */
-// class ResetDatabase extends React.Component {
-//   render() {
-//     return (
-//       <button className="btn btn-default" type="button" onClick={() => {
-//         resetDatabase();
-//         window.alert("Database reset! Refreshing the page now...");
-//         document.location.reload(false);
-//       }}>Reset Mock DB</button>
-//     );
-//   }
-// }
-//
-// ReactDOM.render(
-//   <ResetDatabase />,
-//   document.getElementById('db-reset')
-// );
+
+//class ResetDatabase extends React.Component {
+//  render() {
+//    return (
+//      <button className="btn btn-default" type="button" onClick={() => {
+//        resetDatabase();
+//        window.alert("Database reset! Refreshing the page now...");
+//        document.location.reload(false);
+//      }}>Reset Mock DB</button>
+//    );
+//  }
+//}
+
+//ReactDOM.render(
+//  <ResetDatabase />,
+//  document.getElementById('db-reset')
+//);

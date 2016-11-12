@@ -19,7 +19,7 @@ class Home extends React.Component {
             <Sidebar />
             </div>
             <div className="col-md-9 main-app-canvas">
-              <img src="../img/main_mock_1.png" className="img-responsive"></img>
+              <img src="../img/main_mock_1.png" className="img-responsive" />
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ class About extends React.Component {
 class SavePage extends React.Component {
   render() {
     return (
-      <SavePages />
+      <SavePages user={1}/>
     );
   }
 }
@@ -51,13 +51,15 @@ class CourseHistory extends React.Component {
     );
   }
 }
+
 class Profile extends React.Component {
   render() {
     return (
-      <Profile />
+      <ProfilePage />
     );
   }
 }
+
 
 class App extends React.Component {
   render() {
@@ -71,7 +73,7 @@ class App extends React.Component {
 
 ReactDOM.render((
   <Router history={browserHistory}>
-      <Route path="/" component={App}>
+    <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/home" component={Home} />
       <Route path="/about" component={About} />

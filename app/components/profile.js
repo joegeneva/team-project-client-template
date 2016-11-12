@@ -6,10 +6,10 @@ export default class Profile extends React.Component{
       <div className="container">
         <div className="row">
           <div className="col-xs-4">
-            <img src="../build/img/profile.jpeg" alt="profile image" style="width: 210px;height:210px;" />
+            <img className="pic" src="../img/profile.jpeg" alt="profile image" />
 
           </div>
-          <div class ="col-xs-3 main-bdy">
+          <div className="col-xs-2 main-bdy">
             <span className="category">Full Name: </span>
             <p></p>
             <span className="category">University ID: </span>
@@ -24,7 +24,7 @@ export default class Profile extends React.Component{
             <p></p>
             <hr />
           </div>
-          <div class ="col-xs-3 main-bdy2">
+          <div className="col-xs-3 main-bdy2">
             <span className="data">Sample User</span>
             <p></p>
             <span className="data">12345678</span>
