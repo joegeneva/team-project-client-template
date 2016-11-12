@@ -48,7 +48,8 @@ export default class Navbar extends React.Component{
                     <span className="caret"></span>
                   </button>
                   <ul className="dropdown-menu">
-                    <li><a href="#">Log out...</a></li>
+                  <li><Link to={"/settings/"}>Settings</Link></li>
+                  <li><a href="#">Log out...</a></li>
                   </ul>
                 </div>
               </div>
