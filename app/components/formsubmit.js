@@ -1,5 +1,5 @@
 import React from 'react';
-// import {postFeedback} from '../server';
+import {postFeedback} from '../server';
 // import {writeDocument, addDocument} from '../database.js';
 
 
@@ -17,7 +17,7 @@ export default class FormSub extends React.Component{
     e.preventDefault();
     var statusUpdateText = this.state.value.trim();
     if(statusUpdateText !== ""){
-      postFeedback(1,statusUpdateText,this.props.onPost);
+      postFeedback(1,statusUpdateText);
       this.setState({value: ""});
     }
   }
@@ -39,6 +39,7 @@ export default class FormSub extends React.Component{
           onClick={(e) => this.handlePost(e)}>
           Submit
         </button>
+        {}
       </div>
     )
   }

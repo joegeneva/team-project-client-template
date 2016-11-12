@@ -1,0 +1,26 @@
+.container{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.main-bdy{
+  float:left;
+  padding-right: 0px;
+}
+.main-bdy2{
+  float:left;
+  padding-left: 0px;
+}
+.sidebar{
+  background-color: maroon !important;
+  width:210px;
+}
+.sidebar-box{
+margin-left: 0px;
+}
+.category{
+  font-weight: bold;
+  font-size: 19px;
+}
+.data{
+  font-size: 19px;
+}

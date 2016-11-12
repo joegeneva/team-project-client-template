@@ -26,9 +26,14 @@ body {
 
 .about-subtext{
   padding-left: 20px;
+  color: black;
 }
 .about-subtitle{
   padding-left: 10px;
+  color: black;
+}
+.about-title{
+  color: black;
 }
 
 .general-margin{

@@ -17,6 +17,7 @@ var initialData = {
   },
   "feedback":{
     "1":{
+      "user":1,
       "content":"test 1"
     }
   },
@@ -144,19 +145,19 @@ export function resetDatabase() {
 /**
  * Reset database button.
  */
-class ResetDatabase extends React.Component {
-  render() {
-    return (
-      <button className="btn btn-default" type="button" onClick={() => {
-        resetDatabase();
-        window.alert("Database reset! Refreshing the page now...");
-        document.location.reload(false);
-      }}>Reset Mock DB</button>
-    );
-  }
-}
-
-ReactDOM.render(
-  <ResetDatabase />,
-  document.getElementById('db-reset')
-);
+// class ResetDatabase extends React.Component {
+//   render() {
+//     return (
+//       <button className="btn btn-default" type="button" onClick={() => {
+//         resetDatabase();
+//         window.alert("Database reset! Refreshing the page now...");
+//         document.location.reload(false);
+//       }}>Reset Mock DB</button>
+//     );
+//   }
+// }
+//
+// ReactDOM.render(
+//   <ResetDatabase />,
+//   document.getElementById('db-reset')
+// );
