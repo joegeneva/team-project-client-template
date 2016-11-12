@@ -21,9 +21,9 @@ export default class Navbar extends React.Component{
                     <span className="glyphicon glyphicon-briefcase"></span> Main App
                   </button>
                   </Link>
-                  <Link to={"/savepage/"}>
+                  <Link to={"/savepage"}>
                   <button type="button" className="btn navbar-btn btn-default">
-                    <span className="glyphicon glyphicon-folder-open"></span> Saved Graphs
+                    <span className="glyphicon glyphicon-folder-open"></span> Save Pages
                   </button>
                   </Link>
                   <Link to={"/coursehistory/"}>
@@ -49,6 +49,7 @@ export default class Navbar extends React.Component{
                   </button>
                   <ul className="dropdown-menu">
                   <li><Link to={"/settings/"}>Settings</Link></li>
+                  <li><Link to={"/About/"}>About</Link></li>
                   <li><a href="#">Log out...</a></li>
                   </ul>
                 </div>

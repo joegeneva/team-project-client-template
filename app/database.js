@@ -10,10 +10,7 @@ var initialData = {
     "1":{
       "_id":1,
       "fullName": "Student One",
-      "savedGraphs":{
-        "graphName": "first example graph",
-        "courses": [1,3]
-      },
+      "savedGraphs":[1,2,3,4,5],
       "majors":[1,3],
       "minors":[2]
     }
@@ -56,7 +53,35 @@ var initialData = {
       "number": 132,
       "prereqs": []
     }
+},
+
+"savePage": {
+  "1": {
+    "name": "first draft",
+    "time": "03:11pm . 09/15/2016"
+  },
+  "2": {
+    "name": "second draft",
+    "time": "03:11pm . 09/15/2016"
+  },
+  "3": {
+    "name": "third draft",
+    "time": "03:11pm . 09/15/2016"
+  },
+  "4": {
+    "name": "fourth draft",
+    "time": "03:11pm . 09/15/2016"
+  },
+  "5": {
+    "name": "fifth draft",
+    "time": "03:11pm . 09/15/2016"
+  },
+  "6": {
+    "name": "sixth draft",
+    "time": "03:11pm . 09/15/2016"
+  }
 }
+
 };
 
 var data = JSON.parse(localStorage.getItem(startupName));
