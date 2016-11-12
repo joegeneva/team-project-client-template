@@ -78,10 +78,19 @@ class CourseHistory extends React.Component {
   }
 }
 
+
 class Course extends React.Component {
   render() {
     return (
       <CourseDetails/>
+    );
+  }
+}
+
+class Settings extends React.Component {
+  render() {
+    return (
+    <p>Settings</p>
     );
   }
 }
@@ -105,6 +114,7 @@ ReactDOM.render((
       <Route path="/savepage" component={SavePage} />
       <Route path="/coursehistory" component={CourseHistory} />
       <Route path="/course" component={Course} />
+      <Route path="/Settings" component={Settings} />
     </Route>
   </Router>
 ),document.getElementById('app'));
