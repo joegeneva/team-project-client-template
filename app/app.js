@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/navbar';
-import {IndexRoute,Router, Route, browserHistory } from 'react-router';
+import {IndexRoute, Router, Route, browserHistory } from 'react-router';
 import SavePages from './components/savePage';
 import Sidebar from './components/sidebar';
 import AboutPage from './components/about';
@@ -51,6 +51,7 @@ class CourseHistory extends React.Component {
     );
   }
 }
+
 class Profile extends React.Component {
   render() {
     return (
@@ -58,6 +59,7 @@ class Profile extends React.Component {
     );
   }
 }
+
 
 class App extends React.Component {
   render() {
@@ -71,7 +73,7 @@ class App extends React.Component {
 
 ReactDOM.render((
   <Router history={browserHistory}>
-      <Route path="/" component={App}>
+    <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/home" component={Home} />
       <Route path="/about" component={About} />
