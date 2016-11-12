@@ -1,4 +1,4 @@
-import {readDocument, writeDocument, addDocument} from './database.js';
+import {readDocument, writeDocument, addDocument, readDocumentCollection} from './database.js';
 
 
 
@@ -62,10 +62,17 @@ export function getUserData(user) {
   //emulateServerReturn(userData, cb);
 }
 export function getMajorData(major){
-  var majorData =readDocument('majors', major);
+  var majorData = readDocument('majors', major);
   return majorData;
 }
-export function getFeedbackData(feedbacknum){
-  var feedbackdata =readDocument('feedback', feedbacknum);
+export function getFeedbackData(){
+  var feedbackdata = readDocument('feedback',1);
+  console.log(feedbackdata.listoffeedback.length)
   return feedbackdata;
+}
+
+export function getPageData(user){
+  var userData = readDocument('users', user);
+  var pageData = readDocument('savePage',userData.savedGraphs);
+  return pageData;
 }
