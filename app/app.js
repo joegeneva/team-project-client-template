@@ -3,12 +3,25 @@ import ReactDOM from 'react-dom';
 import Navbar from './components/navbar'
 import {Link,Router, Route, browserHistory } from 'react-router'
 import SavePages from './components/savePage'
+import Sidebar from './components/sidebar'
 import AboutPage from './components/about';
+
 
 class Home extends React.Component {
   render() {
     return (
-      <p>This is the home page.</p>
+      <div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3" id="side-bar">
+            <Sidebar />
+            </div>
+            <div className="col-md-9 main-app-canvas">
+              <img src="../img/main_mock_1.png" className="img-responsive"></img>
+            </div>
+          </div>
+        </div>
+      </div>
     );
   }
 }
