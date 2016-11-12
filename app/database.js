@@ -17,6 +17,7 @@ var initialData = {
   },
   "feedback":{
     "1":{
+      "user":1,
       "content":"test 1"
     }
   },
@@ -148,6 +149,7 @@ export function resetDatabase() {
 /**
  * Reset database button.
  */
+
 //class ResetDatabase extends React.Component {
 //  render() {
 //    return (

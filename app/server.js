@@ -10,7 +10,7 @@ export function postFeedback(user, contents){
 
   writeDocument('feedback', newFeedback);
 
-  emulateServerReturn(newFeedback);
+  //emulateServerReturn(newFeedback);
 }
 
 /**
@@ -47,18 +47,27 @@ function getUserItemSync(userId) {
 * @param user The ID of the user whose feed we are requesting.
 * @param cb A Function object, which we will invoke when the Feed's data is available.
 */
-export function getUserData(user, cb) {
+export function getUserData(user) {
   // Get the User object with the id "user".
   var userData = readDocument('users', user);
+  return userData;
   // Get the Feed object for the user.
   // Map the Feed's FeedItem references to actual FeedItem objects.
   // Note: While map takes a callback function as an argument, it is
   // synchronous, not asynchronous. It calls the callback immediately.
-  userData = userData.map(getUserItemSync);
+  //userData = userData.map(getUserItemSync);
   // Return FeedData with resolved references.
   // emulateServerReturn will emulate an asynchronous server operation, which
   // invokes (calls) the "cb" function some time in the future.
-  emulateServerReturn(userData, cb);
+  //emulateServerReturn(userData, cb);
+}
+export function getMajorData(major){
+  var majorData =readDocument('majors', major);
+  return majorData;
+}
+export function getFeedbackData(feedbacknum){
+  var feedbackdata =readDocument('feedback', feedbacknum);
+  return feedbackdata;
 }
 
 export function getPageData(user){

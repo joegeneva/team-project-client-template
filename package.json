@@ -31,6 +31,10 @@
   },
   "homepage": "https://github.com/GeonYoon/team-project-client-template#readme",
   "dependencies": {
+<<<<<<< HEAD
     "react-router": "^3.0.0"
+=======
+    "react-router": "^1.0.3"
+>>>>>>> befd1d46ceae8ba9d87295a3811c68add512e502
   }
 }
