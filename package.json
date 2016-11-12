@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/GeonYoon/team-project-client-template/issues"
   },
-  "homepage": "https://github.com/GeonYoon/team-project-client-template#readme"
+  "homepage": "https://github.com/GeonYoon/team-project-client-template#readme",
+  "dependencies": {
+    "react-router": "^1.0.3"
+  }
 }
