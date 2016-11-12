@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/navbar'
-import {Router, Route, browserHistory } from 'react-router'
+import {IndexRoute, Router, Route, browserHistory } from 'react-router'
 
 class Home extends React.Component {
   render() {
@@ -49,7 +49,7 @@ class App extends React.Component {
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <Route path="/home" component={Home} />
+      <IndexRoute component={Home} />
       <Route path="/about" component={About} />
       <Route path="/savepage" component={SavePage} />
       <Route path="/coursehistory" component={CourseHistory} />
