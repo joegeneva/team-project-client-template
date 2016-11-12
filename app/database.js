@@ -56,7 +56,6 @@ var initialData = {
       "number": 132,
       "prereqs": []
     }
-  }
 
 };
 
