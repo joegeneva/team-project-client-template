@@ -5,9 +5,11 @@ import {Link,Router, Route, browserHistory } from 'react-router'
 import SavePages from './components/savePage'
 import Sidebar from './components/sidebar'
 import AboutPage from './components/about';
+import CourseHistoryPage from './components/courseHistory';
 
 
 class Home extends React.Component {
+
   render() {
     return (
       <div>
@@ -45,7 +47,7 @@ class SavePage extends React.Component {
 class CourseHistory extends React.Component {
   render() {
     return (
-      <p>This is the course history page.</p>
+      <CourseHistoryPage />
     );
   }
 }
