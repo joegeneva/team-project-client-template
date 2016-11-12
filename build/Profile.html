@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/Profile.css" rel="stylesheet">
+  <link href="css/Navbar.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+      <div class="collapse navbar-collapse">
+        <div class="nav navbar-nav navbar-left">
+          <!-- Left-aligned -->
+          <div class="btn-toolbar pull-left navbar-left" role="toolbar">
+            <div class="btn-group" role="group">
+              <a href="./MainApp.html">
+              <button type="button" class="btn navbar-btn btn-default  home-btn">
+                <span class="glyphicon glyphicon-home home-btn"></span>
+              </button>
+            </a>
+              <a href="./MainApp.html">
+              <button type="button" class="btn navbar-btn btn-default">
+                <span class="glyphicon glyphicon-briefcase"></span> Main App
+              </button>
+            </a>
+              <a href="./savePage.html">
+              <button type="button" class="btn navbar-btn btn-default">
+                <span class="glyphicon glyphicon-folder-open"></span> Saved Graphs
+              </button>
+              </a>
+              <a href="./CourseHistory.html">
+              <button type="button" class="btn navbar-btn btn-default">
+                <span class="glyphicon glyphicon-check"></span>Course History
+              </button>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav navbar-nav navbar-right">
+          <!-- Right-aligned -->
+          <div class="btn-toolbar pull-right" role="toolbar">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn navbar-btn btn-default">
+                <span class="glyphicon glyphicon-user"></span> Sample User
+              </button>
+            </div>
+            <div class="btn-group" role="group">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn navbar-btn btn-default dropdown-toggle"
+                data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Log out...</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </div>
+  </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4">
+      <img src="/img/profile.jpeg" alt="profile image" style="width: 210px;height:210px;">
+
+    </div>
+    <div class ="col-xs-3 main-bdy">
+      <span class="category">Full Name: </span>
+      <p></p>
+      <span class="category">University ID: </span>
+      <p></p>
+      <span class="category">Major(s): </span>
+      <p></p>
+      <span class="category">Minor(s): </span>
+      <p></p>
+      <span class="category">Grad Date: </span>
+      <p></p>
+      <span class="category">Username: </span>
+      <p></p>
+      <hr>
+    </div>
+    <div class ="col-xs-3 main-bdy2">
+      <span class="data">Sample User</span>
+      <p></p>
+      <span class="data">12345678</span>
+      <p></p>
+      <span class="data">Computer Science</span>
+      <p></p>
+      <span class="data">Mathematics</span>
+      <p></p>
+      <span class="data">May, 2018</span>
+      <p></p>
+      <span class="data">suser@umass.edu</span>
+      <p></p>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="row sidebar-box">
+        <div class="sidebar">
+            <button type="button" class="btn navbar-btn btn-default">
+              <span> Saved Graphs</span>
+            </button>
+            <br>
+            <button type="button" class="btn navbar-btn btn-default">
+              <span> Course History</span>
+            </button>
+            <br>
+            <button type="button" class="btn navbar-btn btn-default">
+              <span> About</span>
+            </button>
+            <br>
+            <button type="button" class="btn navbar-btn btn-default">
+              <span> blank</span>
+            </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-5">
+        <div class="input-group">
+          <input type="text" class="form-control fb-search" placeholder="Old Password">
+        </div>
+        <br>
+        <div class="input-group">
+          <input type="text" class="form-control fb-search" placeholder="New Password">
+        </div>
+        <br>
+        <div class="input-group">
+          <input type="text" class="form-control fb-search" placeholder="Confirm New Password">
+        </div>
+        <br>
+    <button type="button" class="btn btn-default">
+      <span>Change Password</span>
+    </button>
+  </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below),
+or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
