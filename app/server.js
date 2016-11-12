@@ -10,7 +10,7 @@ export function postFeedback(user, contents){
 
   writeDocument('feedback', newFeedback);
 
-  emulateServerReturn(newFeedback);
+  //emulateServerReturn(newFeedback);
 }
 
 /**
@@ -64,4 +64,8 @@ export function getUserData(user) {
 export function getMajorData(major){
   var majorData =readDocument('majors', major);
   return majorData;
+}
+export function getFeedbackData(feedbacknum){
+  var feedbackdata =readDocument('feedback', feedbacknum);
+  return feedbackdata;
 }

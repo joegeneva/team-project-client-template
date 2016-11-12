@@ -2,6 +2,7 @@ import React from 'react';
 // import FormSub from './formsubmit';
 import {getUserData} from '../server.js';
 import {getMajorData} from '../server.js';
+import FormSub from './formsubmit';
 
 export default class AboutPage extends React.Component{
   render(){
@@ -53,6 +54,7 @@ export default class AboutPage extends React.Component{
                     <h5 className="about-subtext"><a href="http://www.umass.edu/">UMass</a></h5>
                   <h2 className="about-title">Contact Us</h2>
                     <p className="about-subtext">e-mail us or something</p>
+                    <FormSub />
           </div>
         </div>
       </div>
