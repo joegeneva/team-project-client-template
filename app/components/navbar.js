@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 
 export default class Navbar extends React.Component{
@@ -15,21 +16,21 @@ export default class Navbar extends React.Component{
                     <span className="glyphicon glyphicon-home home-btn"></span>
                   </button>
                 </a>
-                  <a href="./MainApp.html">
+                  <Link to={"/home/"}>
                   <button type="button" className="btn navbar-btn btn-default">
                     <span className="glyphicon glyphicon-briefcase"></span> Main App
                   </button>
-                </a>
-                  <a href="./savePage.html">
+                  </Link>
+                  <Link to={"/savepage/"}>
                   <button type="button" className="btn navbar-btn btn-default">
                     <span className="glyphicon glyphicon-folder-open"></span> Saved Graphs
                   </button>
-                  </a>
-                  <a href="./CourseHistory.html">
+                  </Link>
+                  <Link to={"/coursehistory/"}>
                   <button type="button" className="btn navbar-btn btn-default">
                     <span className="glyphicon glyphicon-check"></span>Course History
                   </button>
-                </a>
+                </Link>
                 </div>
               </div>
             </div>

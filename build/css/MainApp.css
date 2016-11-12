@@ -10,6 +10,7 @@ body {
 
 .main-app-border{
   padding: 10px;
+  position: fixed;
 }
 
 

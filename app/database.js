@@ -6,22 +6,57 @@ var startupName = 'Faucet';
 
 // Put your mock objects here, as in Workshop 4
 var initialData = {
-  "courses" : {
-
-    "CS 326" : {
-      "name" : "Web Programming",
-
-      "textbooks" : "None.",
-
-      "prereqs" : {
-        "desc" : "Must be a junior or senior.",
-        "classes": ["121","187"]
-      }
+  "users":{
+    "1":{
+      "_id":1,
+      "fullName": "Student One",
+      "savedGraphs":{
+        "graphName": "first example graph",
+        "courses": [1,3]
+      },
+      "majors":[1,3],
+      "minors":[2]
     }
-
-
-  }
-
+  },
+  "feedback":{
+    "1":{
+      "content":"test 1"
+    }
+  },
+  "majors":{
+    "1":{
+      "title": "Computer Science",
+      "courses":[1,2]
+    },
+    "2":{
+      "title": "Math",
+      "courses":[]
+    },
+    "3":{
+      "title": "Philosophy",
+      "courses":[]
+    }
+  },
+  "courses":{
+    "1":{
+      "name": "Web Programming",
+      "department": "CS",
+      "number": 326,
+      "prereqs": [2]
+    },
+    "2":{
+      "name": "Programming Methodology",
+      "department": "CS",
+      "number": 220,
+      "prereqs": []
+    },
+    "3":{
+      "name": "Calculus II",
+      "department": "MATH",
+      "number": 132,
+      "prereqs": []
+    }
+}
 };
 
 var data = JSON.parse(localStorage.getItem(startupName));
