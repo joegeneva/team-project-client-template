@@ -65,10 +65,12 @@ export function getMajorData(major){
   var majorData = readDocument('majors', major);
   return majorData;
 }
-export function getFeedbackData(){
-  var feedbackdata = readDocument('feedback',1);
-  console.log(feedbackdata.listoffeedback.length)
+export function getFeedbackNum(fbnum){
+  var feedbackdata = readDocument('feedback',fbnum);
   return feedbackdata;
+}
+export function getFeedbackData(){
+  return readDocumentCollection('feedback');
 }
 
 export function getPageData(user){

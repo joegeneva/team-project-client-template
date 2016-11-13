@@ -10,12 +10,8 @@ var initialData = {
     "1":{
       "_id":1,
       "fullName": "Student One",
-<<<<<<< HEAD
       "sId":12345678,
       "savedGraphs":[1,2,3,4,5],
-=======
-      "savedGraphs": 1,
->>>>>>> c2cf80b8de63508359fdd58eb61ee0912b4d6e95
       "majors":[1,3],
       "minors":[2],
       "gradDate":"May 2018",
@@ -25,7 +21,7 @@ var initialData = {
   },
   "feedback":{
     "1":{
-        "content":"first feedback"
+      "content": "first feedback"
     }
   },
   "majors":{
@@ -149,11 +145,6 @@ export function addDocument(collectionName, newDoc) {
   newDoc._id = nextId;
   writeDocument(collectionName, newDoc);
   return newDoc;
-}
-
-export function getFeedbackNum(){
-  console.log(Object.keys(initialData.feedback).length)
-  return Object.keys(initialData.feedback).length
 }
 
 /**

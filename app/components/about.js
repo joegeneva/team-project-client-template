@@ -3,13 +3,10 @@ import React from 'react';
 import {getUserData} from '../server.js';
 import {getMajorData} from '../server.js';
 import FormSub from './formsubmit';
-import {getFeedbackNum} from '../database.js';
-import {getFeedbackData} from '../server.js';
 
 export default class AboutPage extends React.Component{
   render(){
-    var userInfo = getUserData(1)
-    var fdbk = getFeedbackData()
+    var userInfo = getUserData(this.props.user);
     return(
       <div className="container">
         <div className="row">
@@ -58,11 +55,6 @@ export default class AboutPage extends React.Component{
                   <h2 className="about-title">Contact Us</h2>
                     <p className="about-subtext">e-mail us or something</p>
                     <FormSub />
-                    {fdbk.listoffeedback.map((fed)=>{
-                      return(
-                        <p className="about-subtext">{fed.content}</p>
-                      )
-                    })}
           </div>
         </div>
       </div>
