@@ -3,33 +3,39 @@ import React from 'react';
 import {getUserData} from '../server.js';
 import {getMajorData} from '../server.js';
 import FormSub from './formsubmit';
-import {getFeedbackNum} from '../database.js';
-import {getFeedbackData} from '../server.js';
+import {Link} from 'react-router';
 
 export default class AboutPage extends React.Component{
   render(){
-    var userInfo = getUserData(1)
-    var fdbk = getFeedbackData()
+    var userInfo = getUserData(this.props.user);
     return(
       <div className="container">
         <div className="row">
           <div className="col-md-3">
             <div id="lefsid" className="about-settings">
+              <Link to={"/"}>
               <button type="button" className="btn navbar-btn btn-default">
-                <span> About</span>
+                <span>  Home</span>
               </button>
+            </Link>
               <br />
+              <Link to={"/profile/"}>
               <button type="button" className="btn navbar-btn btn-default">
-                <span> FAQ</span>
+                <span> Profile</span>
               </button>
+            </Link>
               <br />
+              <Link to={"/savepage/"}>
               <button type="button" className="btn navbar-btn btn-default">
-                <span> Helpful Links</span>
+                <span> Saved Graphs</span>
               </button>
+            </Link>
               <br />
+              <Link to={"/coursehistory/"}>
               <button type="button" className="btn navbar-btn btn-default">
-                <span> Contact Us</span>
+                <span> Course History</span>
               </button>
+            </Link>
           </div>
           </div>
           <div className="col-md-9 about-canvas">
@@ -56,13 +62,7 @@ export default class AboutPage extends React.Component{
                     <h5 className="about-subtext"><a href="https://www.spire.umass.edu/">Spire</a></h5>
                     <h5 className="about-subtext"><a href="http://www.umass.edu/">UMass</a></h5>
                   <h2 className="about-title">Contact Us</h2>
-                    <p className="about-subtext">e-mail us or something</p>
                     <FormSub />
-                    {fdbk.listoffeedback.map((fed)=>{
-                      return(
-                        <p className="about-subtext">{fed.content}</p>
-                      )
-                    })}
           </div>
         </div>
       </div>
