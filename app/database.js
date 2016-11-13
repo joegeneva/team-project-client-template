@@ -11,7 +11,7 @@ var initialData = {
       "_id":1,
       "fullName": "Student One",
       "sId":12345678,
-      "savedGraphs":[1,2,3,4,5],
+      "savedGraphs":1,
       "majors":[1,3],
       "minors":[2],
       "gradDate":"May 2018",
