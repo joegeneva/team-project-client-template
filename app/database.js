@@ -10,15 +10,18 @@ var initialData = {
     "1":{
       "_id":1,
       "fullName": "Student One",
-      "savedGraphs": 1,
+      "sId":12345678,
+      "savedGraphs":[1,2,3,4,5],
       "majors":[1,3],
-      "minors":[2]
+      "minors":[2],
+      "gradDate":"May 2018",
+      "email":"sone@umass.edu"
+
     }
   },
   "feedback":{
     "1":{
-      "user":1,
-      "content":"test 1"
+      "content": "first feedback"
     }
   },
   "majors":{
@@ -111,6 +114,12 @@ export function readDocument(collection, id) {
   // Clone the data. We do this to model a database, where you receive a
   // *copy* of an object and not the object itself.
   return JSONClone(data[collection][id]);
+}
+
+export function readDocumentCollection(collection) {
+  // Clone the data. We do this to model a database, where you receive a
+  // *copy* of an object and not the object itself.
+  return JSONClone(data[collection]);
 }
 
 /**
