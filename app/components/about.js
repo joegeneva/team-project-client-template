@@ -3,6 +3,7 @@ import React from 'react';
 import {getUserData} from '../server.js';
 import {getMajorData} from '../server.js';
 import FormSub from './formsubmit';
+import {Link} from 'react-router';
 
 export default class AboutPage extends React.Component{
   render(){
@@ -12,25 +13,29 @@ export default class AboutPage extends React.Component{
         <div className="row">
           <div className="col-md-3">
             <div id="lefsid" className="about-settings">
+              <Link to={"/"}>
               <button type="button" className="btn navbar-btn btn-default">
-                <span>  User Info</span>
+                <span>  Home</span>
               </button>
+            </Link>
               <br />
+              <Link to={"/profile/"}>
               <button type="button" className="btn navbar-btn btn-default">
-                <span> About</span>
+                <span> Profile</span>
               </button>
+            </Link>
               <br />
+              <Link to={"/savepage/"}>
               <button type="button" className="btn navbar-btn btn-default">
-                <span> FAQ</span>
+                <span> Saved Graphs</span>
               </button>
+            </Link>
               <br />
+              <Link to={"/coursehistory/"}>
               <button type="button" className="btn navbar-btn btn-default">
-                <span> Helpful Links</span>
+                <span> Course History</span>
               </button>
-              <br />
-              <button type="button" className="btn navbar-btn btn-default">
-                <span> Contact Us</span>
-              </button>
+            </Link>
           </div>
           </div>
           <div className="col-md-9 about-canvas">
