@@ -1,5 +1,5 @@
-//import React from 'react';
-//import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 // Modify with your startup's name!
 var startupName = 'Faucet';
@@ -150,28 +150,28 @@ export function addDocument(collectionName, newDoc) {
 /**
  * Reset our browser-local database.
  */
-// export function resetDatabase() {
-//   localStorage.setItem(startupName, JSON.stringify(initialData));
-//   data = JSONClone(initialData);
-// }
+export function resetDatabase() {
+  localStorage.setItem(startupName, JSON.stringify(initialData));
+  data = JSONClone(initialData);
+}
 
 /**
  * Reset database button.
  */
 
-//class ResetDatabase extends React.Component {
-//  render() {
-//    return (
-//      <button className="btn btn-default" type="button" onClick={() => {
-//        resetDatabase();
-//        window.alert("Database reset! Refreshing the page now...");
-//        document.location.reload(false);
-//      }}>Reset Mock DB</button>
-//    );
-//  }
-//}
+class ResetDatabase extends React.Component {
+ render() {
+   return (
+     <button className="btn btn-default" type="button" onClick={() => {
+       resetDatabase();
+       window.alert("Database reset! Refreshing the page now...");
+       document.location.reload(false);
+     }}>Reset Mock DB</button>
+   );
+ }
+}
 
-//ReactDOM.render(
-//  <ResetDatabase />,
-//  document.getElementById('db-reset')
-//);
+ReactDOM.render(
+ <ResetDatabase />,
+ document.getElementById('db-reset')
+);
