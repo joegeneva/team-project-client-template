@@ -13,6 +13,10 @@ export default class AboutPage extends React.Component{
           <div className="col-md-3">
             <div id="lefsid" className="about-settings">
               <button type="button" className="btn navbar-btn btn-default">
+                <span>  User Info</span>
+              </button>
+              <br />
+              <button type="button" className="btn navbar-btn btn-default">
                 <span> About</span>
               </button>
               <br />
@@ -53,7 +57,6 @@ export default class AboutPage extends React.Component{
                     <h5 className="about-subtext"><a href="https://www.spire.umass.edu/">Spire</a></h5>
                     <h5 className="about-subtext"><a href="http://www.umass.edu/">UMass</a></h5>
                   <h2 className="about-title">Contact Us</h2>
-                    <p className="about-subtext">e-mail us or something</p>
                     <FormSub />
           </div>
         </div>
