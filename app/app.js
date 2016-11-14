@@ -8,6 +8,7 @@ import Sidebar from './components/sidebar';
 import AboutPage from './components/about';
 import ProfilePage from './components/profile';
 import CourseHistoryPage from './components/courseHistory';
+import CourseDetails from './components/coursedetails';
 
 class Home extends React.Component {
 
@@ -56,8 +57,16 @@ class CourseHistory extends React.Component {
 class Profile extends React.Component {
   render() {
     return (
-      <Profile />
+      <ProfilePage />
     );
+  }
+}
+
+class Course extends React.Component {
+  render(){
+    return (
+      <CourseDetails course={1}/>
+    )
   }
 }
 
@@ -81,6 +90,7 @@ ReactDOM.render((
       <Route path="/savepage" component={SavePage} />
       <Route path="/coursehistory" component={CourseHistory} />
       <Route path="/profile" component={Profile} />
+      <Route path = "/course/:course" component={Course} />
     </Route>
   </Router>
 ),document.getElementById('app'));

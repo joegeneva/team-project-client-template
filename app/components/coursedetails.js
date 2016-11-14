@@ -12,7 +12,7 @@ export default class CourseDetails extends React.Component{
                 <div className = "media">
                   <div className = "media-body">
                     <h1>
-                      <strong>CS 326:</strong> Web Programming
+                      <strong>CS {this.props.params.course}:</strong> Web Programming
                     </h1>
                     <h4>
                       <strong>Status:</strong> Eligible
