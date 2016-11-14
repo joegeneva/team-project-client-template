@@ -1,29 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/navbar';
-import {IndexRoute, Link,Router, Route, browserHistory } from 'react-router';
+import {IndexRoute,Router, Route, browserHistory } from 'react-router';
 import SavePages from './components/savePage';
-import Sidebar from './components/sidebar';
+import HomePage from './components/home';
 import AboutPage from './components/about';
 import ProfilePage from './components/profile';
 import CourseHistoryPage from './components/courseHistory';
+import CourseDetails from './components/coursedetails';
 
 class Home extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-3" id="side-bar">
-            <Sidebar />
-            </div>
-            <div className="col-md-9 main-app-canvas">
-              <img src="../img/main_mock_1.png" className="img-responsive" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <HomePage user={1} />
     );
   }
 }
@@ -60,6 +50,14 @@ class Profile extends React.Component {
   }
 }
 
+class Course extends React.Component {
+  render(){
+    return (
+      <CourseDetails course={1}/>
+    )
+  }
+}
+
 
 class App extends React.Component {
   render() {
@@ -80,6 +78,7 @@ ReactDOM.render((
       <Route path="/savepage" component={SavePage} />
       <Route path="/coursehistory" component={CourseHistory} />
       <Route path="/profile" component={Profile} />
+      <Route path = "/course/:course" component={Course} />
     </Route>
   </Router>
 ),document.getElementById('app'));
