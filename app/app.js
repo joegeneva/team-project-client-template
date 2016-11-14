@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/navbar';
-import {IndexRoute, Link,Router, Route, browserHistory } from 'react-router';
+import {IndexRoute,Router, Route, browserHistory } from 'react-router';
 import SavePages from './components/savePage';
 import Sidebar from './components/sidebar';
 import AboutPage from './components/about';
