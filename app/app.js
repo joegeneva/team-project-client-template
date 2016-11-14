@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import Navbar from './components/navbar';
-import {IndexRoute, Router, Route, browserHistory } from 'react-router';
+import {IndexRoute, Link,Router, Route, browserHistory } from 'react-router';
 import SavePages from './components/savePage';
 import Sidebar from './components/sidebar';
 import AboutPage from './components/about';
@@ -21,7 +20,7 @@ class Home extends React.Component {
             <Sidebar />
             </div>
             <div className="col-md-9 main-app-canvas">
-              <img src="../img/main_mock_1.png" className="img-responsive"></img>
+              <img src="../img/main_mock_1.png" className="img-responsive" />
             </div>
           </div>
         </div>
@@ -41,7 +40,7 @@ class About extends React.Component {
 class SavePage extends React.Component {
   render() {
     return (
-      <SavePages />
+      <SavePages user={1}/>
     );
   }
 }
@@ -57,7 +56,7 @@ class CourseHistory extends React.Component {
 class Profile extends React.Component {
   render() {
     return (
-      <ProfilePage />
+      <ProfilePage user={1}/>
     );
   }
 }

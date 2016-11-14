@@ -9,15 +9,18 @@ var initialData = {
     "1":{
       "_id":1,
       "fullName": "Student One",
-      "savedGraphs":[1,2,3,4,5],
+      "sId":12345678,
+      "savedGraphs":1,
       "majors":[1,3],
-      "minors":[2]
+      "minors":[2],
+      "gradDate":"May 2018",
+      "email":"sone@umass.edu"
+
     }
   },
   "feedback":{
     "1":{
-      "user":1,
-      "content":"test 1"
+      "content": "first feedback"
     }
   },
   "majors":{
@@ -57,28 +60,32 @@ var initialData = {
 
 "savePage": {
   "1": {
-    "name": "first draft",
-    "time": "03:11pm . 09/15/2016"
-  },
-  "2": {
-    "name": "second draft",
-    "time": "03:11pm . 09/15/2016"
-  },
-  "3": {
-    "name": "third draft",
-    "time": "03:11pm . 09/15/2016"
-  },
-  "4": {
-    "name": "fourth draft",
-    "time": "03:11pm . 09/15/2016"
-  },
-  "5": {
-    "name": "fifth draft",
-    "time": "03:11pm . 09/15/2016"
-  },
-  "6": {
-    "name": "sixth draft",
-    "time": "03:11pm . 09/15/2016"
+    "pages": [
+        {
+          "name": "first draft",
+          "time": "03:11pm . 09/15/2016"
+        },
+        {
+          "name": "second draft",
+          "time": "03:11pm . 09/15/2016"
+        },
+        {
+          "name": "third draft",
+          "time": "03:11pm . 09/15/2016"
+        },
+        {
+          "name": "fourth draft",
+          "time": "03:11pm . 09/15/2016"
+        },
+        {
+          "name": "fifth draft",
+          "time": "03:11pm . 09/15/2016"
+        },
+        {
+          "name": "sixth draft",
+          "time": "03:11pm . 09/15/2016"
+        }
+      ]
   }
 }
 
@@ -106,6 +113,12 @@ export function readDocument(collection, id) {
   // Clone the data. We do this to model a database, where you receive a
   // *copy* of an object and not the object itself.
   return JSONClone(data[collection][id]);
+}
+
+export function readDocumentCollection(collection) {
+  // Clone the data. We do this to model a database, where you receive a
+  // *copy* of an object and not the object itself.
+  return JSONClone(data[collection]);
 }
 
 /**
@@ -144,19 +157,20 @@ export function resetDatabase() {
 /**
  * Reset database button.
  */
-// class ResetDatabase extends React.Component {
-//   render() {
-//     return (
-//       <button className="btn btn-default" type="button" onClick={() => {
-//         resetDatabase();
-//         window.alert("Database reset! Refreshing the page now...");
-//         document.location.reload(false);
-//       }}>Reset Mock DB</button>
-//     );
-//   }
-// }
-//
-// ReactDOM.render(
-//   <ResetDatabase />,
-//   document.getElementById('db-reset')
-// );
+
+class ResetDatabase extends React.Component {
+ render() {
+   return (
+     <button className="btn btn-default" type="button" onClick={() => {
+       resetDatabase();
+       window.alert("Database reset! Refreshing the page now...");
+       document.location.reload(false);
+     }}>Reset Mock DB</button>
+   );
+ }
+}
+
+ReactDOM.render(
+ <ResetDatabase />,
+ document.getElementById('db-reset')
+);

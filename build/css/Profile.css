@@ -5,14 +5,18 @@
 .main-bdy{
   float:left;
   padding-right: 0px;
+  color: black !important;
 }
 .main-bdy2{
   float:left;
-  padding-left: 0px;
+  padding-left: 10px;
+  color: black !important;
 }
 .sidebar{
   background-color: maroon !important;
   width:210px;
+  margin-top: 0px;
+  border-radius: 0px;
 }
 .sidebar-box{
 margin-left: 0px;
@@ -23,4 +27,8 @@ margin-left: 0px;
 }
 .data{
   font-size: 19px;
+}
+.pic{
+  width: 210px;
+  height: 210px;
 }

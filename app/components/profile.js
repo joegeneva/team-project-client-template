@@ -1,15 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router';
+import {getUserData} from '../server';
 export default class Profile extends React.Component{
   render(){
+    var userInfo = getUserData(1);
     return(
       <div className="container">
         <div className="row">
           <div className="col-xs-4">
-            <img src="../build/img/profile.jpeg" alt="profile image" style="width: 210px;height:210px;" />
-
+            <img className="pic" src="../img/profile.jpeg" alt="profile image" />
           </div>
-          <div class ="col-xs-3 main-bdy">
+          <div className="col-xs-2 main-bdy">
             <span className="category">Full Name: </span>
             <p></p>
             <span className="category">University ID: </span>
@@ -20,22 +21,22 @@ export default class Profile extends React.Component{
             <p></p>
             <span className="category">Grad Date: </span>
             <p></p>
-            <span className="category">Username: </span>
+            <span className="category">Email: </span>
             <p></p>
             <hr />
           </div>
-          <div class ="col-xs-3 main-bdy2">
-            <span className="data">Sample User</span>
+          <div className="col-xs-3 main-bdy2">
+            <span className="data">{userInfo.fullName}</span>
             <p></p>
-            <span className="data">12345678</span>
+            <span className="data">{userInfo.sId}</span>
             <p></p>
             <span className="data">Computer Science</span>
             <p></p>
             <span className="data">Mathematics</span>
             <p></p>
-            <span className="data">May, 2018</span>
+            <span className="data">{userInfo.gradDate}</span>
             <p></p>
-            <span className="data">suser@umass.edu</span>
+            <span className="data">{userInfo.email}</span>
             <p></p>
             <hr />
           </div>
@@ -44,17 +45,23 @@ export default class Profile extends React.Component{
           <div className="col-xs-4">
             <div className="row sidebar-box">
               <div className="sidebar">
+              <Link to={"savepage"}>
                   <button type="button" className="btn navbar-btn btn-default">
                     <span> Saved Graphs</span>
                   </button>
+                  </Link>
                   <br />
+                  <Link to={"coursehistory"}>
                   <button type="button" className="btn navbar-btn btn-default">
                     <span> Course History</span>
                   </button>
+                  </Link>
                   <br />
+                  <Link to={"about"}>
                   <button type="button" className="btn navbar-btn btn-default">
                     <span> About</span>
                   </button>
+                  </Link>
                   <br />
                   <button type="button" className="btn navbar-btn btn-default">
                     <span> blank</span>
