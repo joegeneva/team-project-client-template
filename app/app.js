@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Navbar from './components/navbar';
 import {IndexRoute,Router, Route, browserHistory } from 'react-router';
 import SavePages from './components/savePage';
-import Sidebar from './components/sidebar';
+import HomePage from './components/home';
 import AboutPage from './components/about';
 import ProfilePage from './components/profile';
 import CourseHistoryPage from './components/courseHistory';
@@ -13,18 +13,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-3" id="side-bar">
-            <Sidebar />
-            </div>
-            <div className="col-md-9 main-app-canvas">
-              <img src="../img/main_mock_1.png" className="img-responsive" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <HomePage user={1} />
     );
   }
 }

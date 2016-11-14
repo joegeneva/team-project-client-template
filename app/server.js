@@ -13,6 +13,15 @@ export function postFeedback(user, contents){
   //emulateServerReturn(newFeedback);
 }
 
+export function saveAGraph(user, title){//will add more info like courses and stuff
+  var newSaved = {
+    "name": title,
+    "time": (new Date).getTime()
+  };
+  var newNew = readDocument('savePage', readDocument('users',user).savedGraphs).push(newSaved)
+  writeDocument('savePage', newNew)
+}
+
 /**
  * Emulates how a REST call is *asynchronous* -- it calls your function back
  * some time in the future with data.
@@ -64,6 +73,10 @@ export function getUserData(user) {
 export function getMajorData(major){
   var majorData = readDocument('majors', major);
   return majorData;
+}
+export function getMinorData(minor){
+  var minorData = readDocument('majors', minor); //for now, majors and minors taken from same list
+  return minorData;
 }
 export function getFeedbackNum(fbnum){
   var feedbackdata = readDocument('feedback',fbnum);
